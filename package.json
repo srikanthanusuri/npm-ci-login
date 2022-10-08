@@ -4,6 +4,7 @@
   "description": "Login to the npm registry from CI",
   "main": "index.js",
   "bin": "index.js",
+  "private": false,
   "scripts": {
     "start": "node index.js"
   },
