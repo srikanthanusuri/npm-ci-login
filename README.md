@@ -6,7 +6,7 @@ Also creates/modifies entries in the ~/.npmrc file for authentication.
 
 ### Installation
 
-    npm install --location=global @sanusuri/npm-cli-login
+    npm install --location=global @srikanthanusuri/npm-cli-login
 
 Use --location=global flag to use npm-cli-login via the CLI
 
