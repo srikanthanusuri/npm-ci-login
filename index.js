@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-const registry = process.env.NPM_REGISTRY;
+const registry = process.env.NPM_REGISTRY || 'https://registry.npmjs.org';
 const name = process.env.NPM_USERNAME;
 const password = process.env.NPM_PASSWORD;
-if(!registry || !name || !password) {
+if(!name || !password) {
   console.error('------------------------------------------------------------------------------------------------------------');
   console.error('Please specify all the following environment variables');
-  console.error('NPM_REGISTRY - The URL of the registry. Eg: https://registry.npmjs.org');
   console.error('NPM_USERNAME - The username used to login to the repository.');
   console.error('NPM_PASSWORD - The password used to login to the repository.');
   console.error('------------------------------------------------------------------------------------------------------------');
