@@ -27,7 +27,7 @@ You can also export variables and run it all in one line:
 
     NPM_USERNAME=testUser NPM_PASSWORD=testPass npm-cli-login
 
-##### Library
+##### Module usage
 Usage
 ```javascript
 const npmCiLogin = require('@srikanthanusuri/npm-ci-login');
