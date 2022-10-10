@@ -1,6 +1,6 @@
 {
   "name": "@srikanthanusuri/npm-ci-login",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Login to the npm registry from CI",
   "main": "npmCiLogin.js",
   "bin": "index.js",
