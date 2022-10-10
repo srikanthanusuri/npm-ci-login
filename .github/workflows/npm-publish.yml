@@ -30,10 +30,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
       - run: npm config set access public
       - run: npm set "//registry.npmjs.org/:_authToken" ${{secrets.NPM_TOKEN}}
-      - run: npm publish
+      - run: npm install -g release-it
+      - run: release-it minor --ci
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
