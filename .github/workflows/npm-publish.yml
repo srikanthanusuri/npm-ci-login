@@ -33,7 +33,7 @@ jobs:
       - run: npm config set access public
       - run: npm set "//registry.npmjs.org/:_authToken" ${{secrets.NPM_TOKEN}}
       - run: git config --global user.email "noreply@example.com"
-      - run: git config --global user.name "Git Action"
+      - run: git config --global user.name "Bot"
       - run: npm install -g release-it
       - run: release-it minor --ci
         env:
