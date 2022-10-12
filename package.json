@@ -1,6 +1,6 @@
 {
   "name": "@srikanthanusuri/npm-ci-login",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Login to the npm registry from CI",
   "main": "npmCiLogin.js",
   "bin": "index.js",
@@ -8,7 +8,12 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["npm", "cli", "ci", "login"],
+  "keywords": [
+    "npm",
+    "cli",
+    "ci",
+    "login"
+  ],
   "author": "Srikanth Anusuri",
   "license": "MIT",
   "repository": {
