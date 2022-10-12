@@ -3,11 +3,13 @@ Inspired from [npm-ci-login](https://github.com/postmanlabs/npm-cli-login)
 
 Allows you to log in to NPM without STDIN, STDOUT. Use in places like CI build systems.
 
+Uses REST calls to authenticate to the target registry.
+
 ### Installation
 
-    npm install --location=global @srikanthanusuri/npm-cli-login
+    npm install --location=global @srikanthanusuri/npm-ci-login
 
-Use --location=global flag to use npm-cli-login via the CLI
+Use --location=global flag to use npm-ci-login via the CLI
 
 ### Usage
 
@@ -21,11 +23,11 @@ Use --location=global flag to use npm-cli-login via the CLI
 
 Once the required ones are set, you can just run the following to log in:
 
-    npm-cli-login
+    npm-ci-login
 
 You can also export variables and run it all in one line:
 
-    NPM_USERNAME=testUser NPM_PASSWORD=testPass npm-cli-login
+    NPM_USERNAME=testUser NPM_PASSWORD=testPass npm-ci-login
 
 ##### Module usage
 Usage
