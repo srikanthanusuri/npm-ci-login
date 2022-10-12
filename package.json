@@ -8,9 +8,16 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["npm", "cli", "ci", "login"],
+  "author": "Srikanth Anusuri",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srikanthanusuri/npm-ci-login"
+  },
+  "bugs": {
+    "url": "https://github.com/srikanthanusuri/npm-ci-login/issues"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
