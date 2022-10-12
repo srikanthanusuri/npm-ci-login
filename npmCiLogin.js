@@ -36,7 +36,7 @@ const init = () => {
     return {key, token};
   };
 
-  const setToken = async (key, token, username) => {
+  const setToken = async (key, token, username, registry) => {
     const { spawn } = require('child_process');
     const npmLogin = spawn('npm', ['config', '--global', 'set', `${key}=${token}`]);
     let consoleOutput = '';
@@ -62,7 +62,7 @@ const init = () => {
     const data = { name: username, password };
     const {key, token} = await fetchToken(registry, data);
 
-    await setToken(key, token, username);
+    await setToken(key, token, username, registry);
   };
   
   module.exports = login;
